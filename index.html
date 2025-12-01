@@ -25,7 +25,145 @@
             overflow-x: hidden;
             position: relative;
         }
+/* Responsive */
+        @media(max-width:768px) {
+            h1 {
+                font-size: 2.5rem
+            }
 
+            h2 {
+                font-size: 2rem
+            }
+
+            .card {
+                padding: 25px;
+                margin: 0 15px;
+            }
+
+            .hero-text {
+                font-size: 1rem;
+                text-align: center;
+                padding: 0 10px;
+            }
+
+            button {
+                padding: 14px 32px;
+                font-size: 1rem;
+            }
+
+            .cake {
+                width: 180px;
+                height: 130px;
+            }
+
+            .cake::before {
+                top: -50px;
+                height: 50px;
+            }
+
+            .candle {
+                height: 35px;
+                top: -70px;
+            }
+
+            .flame {
+                top: -25px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 15px;
+                padding: 0 15px;
+            }
+
+            .chat {
+                padding: 0 15px;
+            }
+
+            .bubble {
+                padding: 14px 18px;
+                font-size: 0.95rem;
+                max-width: 85%;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            .voice-btn {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8rem;
+            }
+
+            footer {
+                padding: 30px 20px;
+                font-size: 0.85rem;
+                text-align: center;
+            }
+        }
+
+        @media(max-width:480px) {
+            h1 {
+                font-size: 2rem
+            }
+
+            h2 {
+                font-size: 1.8rem
+            }
+
+            .card {
+                padding: 20px;
+                margin: 0 10px;
+            }
+
+            .card p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            button {
+                padding: 12px 28px;
+                font-size: 0.95rem;
+            }
+
+            .cake {
+                width: 150px;
+                height: 110px;
+            }
+
+            .cake::before {
+                top: -40px;
+                height: 40px;
+            }
+
+            .candle {
+                width: 10px;
+                height: 30px;
+                top: -60px;
+            }
+
+            .flame {
+                width: 16px;
+                height: 20px;
+                top: -22px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .scroll-indicator {
+                font-size: 1.5rem;
+                bottom: 20px;
+            }
+
+            #popup .card {
+                max-width: 90%;
+                margin: 0 15px;
+            }
+        }
         /* Animated gradient background */
         body::before {
             content: '';
@@ -725,7 +863,7 @@
             <div class="gallery-item"><img src="3.jpeg" alt="Memory"></div>
             <div class="gallery-item"><img src="4.jpeg" alt="Memory"></div>
         </div>
-        <p style="margin-top:30px;font-size:1.1rem;opacity:0.9">Replace these with your real photos together 💝</p>
+        <p style="margin-top:30px;font-size:1.1rem;opacity:0.9"></p>
     </section>
 
     <!-- CHAT -->
